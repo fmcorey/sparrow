@@ -22,7 +22,10 @@ echo "pip installing requirements from requirements file in target directory"
 pip install -r ../requirements.txt -t .
 
 # Prepares the deployment package
+
+#Need to confirm that zip installed.. setup runs without errors otherwise 
 echo "Zipping package"
+sudo apt-install zip
 zip -r ../package.zip ./* 
 
 # Remove the setup directory used
