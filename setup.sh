@@ -25,7 +25,8 @@ pip install -r ../requirements.txt -t .
 
 #Need to confirm that zip installed.. setup runs without errors otherwise 
 echo "Zipping package"
-sudo apt-install zip
+echo "Please make sure that zip is installed.." 
+#ToDo: cross platform installation for zip[?]
 zip -r ../package.zip ./* 
 
 # Remove the setup directory used
